@@ -623,30 +623,6 @@ let str = `
 
                  "buttonParamsJson": "{\"display_text\":\"repo\",\"url\":\"https://github.com/anonphoenix007/XLICON-V2-MD\",\"merchant_url\":\"https://github.com/anonphoenix007/XLICON-V2-MD\"}"
 
-              },              
-
-              {
-
-  "name": "quick_reply",
-
-  "buttonParamsJson": `{"display_text":"Allmenu 🗂️","id":"${prefix}allmenu"}`
-
-   },
-
-              {
-
-                "name": "quick_reply",
-
-                "buttonParamsJson": `{"display_text":"Owner 👤","id":"${prefix}owner"}`
-
-              },
-
-              {
-
-                "name": "quick_reply",
-
-                "buttonParamsJson": `{"display_text":"Script 📃","id":"${prefix}script"}`
-
               }
 
            ],
@@ -663,17 +639,9 @@ let str = `
 
 
 
-await m.relayMessage(msg.key.remoteJid, msg.message, {
-
-  messageId: msg.key.id
-
-})
-
+await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id })
 }
 
-            }
-
-}
 handler.help = ['main']
 handler.tags = ['group']
 handler.command = ['commands', 'lists'] 
