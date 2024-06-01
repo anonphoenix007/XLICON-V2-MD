@@ -644,7 +644,7 @@ await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id 
 
 handler.help = ['main']
 handler.tags = ['group']
-handler.command = ['commands', 'lists'] 
+handler.command = ['button', 'taira'] 
 
 export default handler
 function clockString(ms) {
